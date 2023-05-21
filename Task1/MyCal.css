@@ -1,0 +1,50 @@
+body{
+    background-color: rgba(161, 247, 134, 0.82);
+}
+.cal{
+    position: absolute;
+    left: 35%;
+    top: 15%;
+    background-color: DodgerBlue;
+    height: 85%;
+    width: 28%;
+    border-radius: 50px;
+}
+.txt{
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    font-size: large;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    width: 98%;
+    height: 100px;
+    text-align: right;
+}
+.btn{
+    color:aliceblue;
+    background-color:rgb(9, 131, 253);
+    border-radius: 50%;
+    width: 60px;
+    height: 50px;
+    text-align: center;
+  text-decoration: none;
+  border: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.btn:hover{
+    
+    background-color: rgba(6, 6, 241, 0.658);
+    color: white;
+}
+.btn:active{
+    background-color: black;
+    color: white;
+}
+h1{
+    font-family: fantasy;
+    text-align: center;
+    color: brown;
+    font-size: xxx-large;
+
+}

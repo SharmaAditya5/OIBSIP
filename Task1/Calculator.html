@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+   <link rel="stylesheet" href="MyCal.css">
+   <script type="text/javascript"> 
+        function calculate() {  
+            var a=document.getElementById("text").value;
+            var b=eval(a);
+           document.getElementById("text").value =b;
+
+        }
+        function sqr(){
+            var a=document.getElementById("text").value;
+            var b=Math.sqrt(a);
+            document.getElementById("text").value =b;
+        }
+        function square()
+        {
+            var a=document.getElementById("text").value;
+            document.getElementById("text").value=a*a;
+        }
+        function byx()
+        {
+            var a=document.getElementById("text").value;
+            document.getElementById("text").value=1/a;
+        }
+        function clearSr(){
+            document.getElementById("text").value="";
+
+        }
+        function display(value){
+            document.getElementById("text").value+=value;
+        }
+        function del()
+        {
+            var a=document.getElementById("text").value;   
+            a=a.substr(0,a.length-1);
+            document.getElementById("text").value=a;
+
+        }
+       </script>
+   
+</head>
+<body>
+    <h1>STANDARD CALCULATOR </h1>
+    <div class="cal">
+        <input class="txt" type="text" id="text" placeholder="0" name="text" disabled>
+    <table>
+        <tr>
+        <td><input class="btn" type="button" value="%"  onclick=" display('%')"> </td>
+        <td><input class="btn" type="button" value="sqrt"  onclick="sqr()" > </td>
+        <td><input class="btn" type="button" value="x^2" onclick="square()"> </td>
+        <td><input class="btn" type="button" value="1/x" onclick="byx()"> </td>
+        </tr>
+
+        
+        <tr>
+            <td><input class="btn" type="button" value="CE" onclick = "clearSr()"> </td>
+            <td><input class="btn" type="button" value="C" onclick = "clearSr()"> </td>
+            <td><input class="btn" type="button" value="<" onclick="del()"> </td>
+            <td><input class="btn" type="button" value="/" onclick="display('/')"> </td>
+        </tr>
+        
+        <tr>
+            <td><input class="btn" type="button" value="7" onclick= "display('7')"> </td>
+            <td><input class="btn" type="button" value="8" onclick=" display('8')"> </td>
+            <td><input class="btn" type="button" value="9" onclick=" display('9')"> </td>
+            <td><input class="btn" type="button" value="*" onclick=" display('*')"> </td>
+        </tr>
+        
+        <tr>
+            <td><input class="btn" type="button" value="4" onclick=" display('4')"> </td>
+            <td><input class="btn" type="button" value="5" onclick=" display('5')"> </td>
+            <td><input class="btn" type="button" value="6" onclick=" display('6')"> </td>
+            <td><input class="btn" type="button" value="-" onclick=" display('-')"> </td>
+        </tr>
+        
+        <tr>
+            <td><input class="btn" type="button" value="1" onclick=" display('1')"> </td>
+            <td><input class="btn" type="button" value="2" onclick=" display('2')"> </td>
+            <td><input class="btn" type="button" value="3" onclick=" display('3')"> </td>
+            <td><input class="btn" type="button" value="+" onclick=" display('+')"> </td>
+        </tr>
+        
+        <tr>
+            <td><input class="btn" type="button" value="+-" onclick=" display('+-')"> </td>
+            <td><input class="btn" type="button" value="0" onclick=" display('0')"> </td>
+            <td><input class="btn" type="button" value="." onclick=" display('.')"> </td>
+            <td><input class="btn" type="button" value="=" onclick="calculate()"> </td>
+        </tr>
+         
+    </table>
+</div>
+</body>
+
+</html>
